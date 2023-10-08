@@ -1,2 +1,6 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# Stella template in Dart
+
+To test run this from the root
+```
+dart bin/main.dart test/factorial.stella
+```
