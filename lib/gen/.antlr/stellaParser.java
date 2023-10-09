@@ -166,14 +166,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_start_Program; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterStart_Program(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitStart_Program(this);
-		}
 	}
 
 	public final Start_ProgramContext start_Program() throws RecognitionException {
@@ -210,14 +202,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_start_Expr; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterStart_Expr(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitStart_Expr(this);
-		}
 	}
 
 	public final Start_ExprContext start_Expr() throws RecognitionException {
@@ -254,14 +238,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_start_Type; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterStart_Type(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitStart_Type(this);
-		}
 	}
 
 	public final Start_TypeContext start_Type() throws RecognitionException {
@@ -312,14 +288,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterProgram(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitProgram(this);
-		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -392,14 +360,6 @@ public class stellaParser extends Parser {
 		public TerminalNode Surrogate_id_SYMB_38() { return getToken(stellaParser.Surrogate_id_SYMB_38, 0); }
 		public TerminalNode Surrogate_id_SYMB_1() { return getToken(stellaParser.Surrogate_id_SYMB_1, 0); }
 		public LanguageCoreContext(LanguageDeclContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLanguageCore(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLanguageCore(this);
-		}
 	}
 
 	public final LanguageDeclContext languageDecl() throws RecognitionException {
@@ -456,14 +416,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public AnExtensionContext(ExtensionContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterAnExtension(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitAnExtension(this);
-		}
 	}
 
 	public final ExtensionContext extension() throws RecognitionException {
@@ -536,14 +488,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public DeclTypeAliasContext(DeclContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDeclTypeAlias(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDeclTypeAlias(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class DeclExceptionTypeContext extends DeclContext {
@@ -555,14 +499,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public DeclExceptionTypeContext(DeclContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDeclExceptionType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDeclExceptionType(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class DeclFunContext extends DeclContext {
@@ -618,14 +554,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public DeclFunContext(DeclContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDeclFun(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDeclFun(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class DeclExceptionVariantContext extends DeclContext {
@@ -639,14 +567,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public DeclExceptionVariantContext(DeclContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDeclExceptionVariant(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDeclExceptionVariant(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class DeclFunGenericContext extends DeclContext {
@@ -710,14 +630,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public DeclFunGenericContext(DeclContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDeclFunGeneric(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDeclFunGeneric(this);
-		}
 	}
 
 	public final DeclContext decl() throws RecognitionException {
@@ -1066,14 +978,6 @@ public class stellaParser extends Parser {
 	public static class InlineAnnotationContext extends AnnotationContext {
 		public TerminalNode Surrogate_id_SYMB_48() { return getToken(stellaParser.Surrogate_id_SYMB_48, 0); }
 		public InlineAnnotationContext(AnnotationContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterInlineAnnotation(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitInlineAnnotation(this);
-		}
 	}
 
 	public final AnnotationContext annotation() throws RecognitionException {
@@ -1111,14 +1015,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_paramDecl; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterParamDecl(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitParamDecl(this);
-		}
 	}
 
 	public final ParamDeclContext paramDecl() throws RecognitionException {
@@ -1172,14 +1068,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public FoldContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterFold(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitFold(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class AddContext extends ExprContext {
@@ -1193,14 +1081,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public AddContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterAdd(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitAdd(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class IsZeroContext extends ExprContext {
@@ -1212,28 +1092,12 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public IsZeroContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterIsZero(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitIsZero(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class VarContext extends ExprContext {
 		public Token name;
 		public TerminalNode StellaIdent() { return getToken(stellaParser.StellaIdent, 0); }
 		public VarContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterVar(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitVar(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeAbstractionContext extends ExprContext {
@@ -1251,14 +1115,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.StellaIdent, i);
 		}
 		public TypeAbstractionContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeAbstraction(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeAbstraction(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class DivideContext extends ExprContext {
@@ -1272,14 +1128,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public DivideContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDivide(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDivide(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class LessThanContext extends ExprContext {
@@ -1293,14 +1141,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public LessThanContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLessThan(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLessThan(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class DotRecordContext extends ExprContext {
@@ -1312,14 +1152,6 @@ public class stellaParser extends Parser {
 		}
 		public TerminalNode StellaIdent() { return getToken(stellaParser.StellaIdent, 0); }
 		public DotRecordContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDotRecord(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDotRecord(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class GreaterThanContext extends ExprContext {
@@ -1333,14 +1165,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public GreaterThanContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterGreaterThan(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitGreaterThan(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class EqualContext extends ExprContext {
@@ -1354,14 +1178,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public EqualContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterEqual(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitEqual(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ThrowContext extends ExprContext {
@@ -1373,14 +1189,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public ThrowContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterThrow(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitThrow(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class MultiplyContext extends ExprContext {
@@ -1394,28 +1202,12 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public MultiplyContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterMultiply(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitMultiply(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ConstMemoryContext extends ExprContext {
 		public Token mem;
 		public TerminalNode MemoryAddress() { return getToken(stellaParser.MemoryAddress, 0); }
 		public ConstMemoryContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterConstMemory(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitConstMemory(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ListContext extends ExprContext {
@@ -1431,14 +1223,6 @@ public class stellaParser extends Parser {
 		}
 		public TerminalNode Surrogate_id_SYMB_0() { return getToken(stellaParser.Surrogate_id_SYMB_0, 0); }
 		public ListContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitList(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TryCatchContext extends ExprContext {
@@ -1466,14 +1250,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(PatternContext.class,0);
 		}
 		public TryCatchContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTryCatch(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTryCatch(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class HeadContext extends ExprContext {
@@ -1485,14 +1261,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public HeadContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterHead(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitHead(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class NotEqualContext extends ExprContext {
@@ -1506,27 +1274,11 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public NotEqualContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterNotEqual(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitNotEqual(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ConstUnitContext extends ExprContext {
 		public TerminalNode Surrogate_id_SYMB_63() { return getToken(stellaParser.Surrogate_id_SYMB_63, 0); }
 		public ConstUnitContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterConstUnit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitConstUnit(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class SequenceContext extends ExprContext {
@@ -1540,27 +1292,11 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public SequenceContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterSequence(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitSequence(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ConstFalseContext extends ExprContext {
 		public TerminalNode Surrogate_id_SYMB_41() { return getToken(stellaParser.Surrogate_id_SYMB_41, 0); }
 		public ConstFalseContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterConstFalse(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitConstFalse(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class AbstractionContext extends ExprContext {
@@ -1587,28 +1323,12 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public AbstractionContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterAbstraction(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitAbstraction(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ConstIntContext extends ExprContext {
 		public Token n;
 		public TerminalNode INTEGER() { return getToken(stellaParser.INTEGER, 0); }
 		public ConstIntContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterConstInt(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitConstInt(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class VariantContext extends ExprContext {
@@ -1622,27 +1342,11 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public VariantContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterVariant(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitVariant(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ConstTrueContext extends ExprContext {
 		public TerminalNode Surrogate_id_SYMB_60() { return getToken(stellaParser.Surrogate_id_SYMB_60, 0); }
 		public ConstTrueContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterConstTrue(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitConstTrue(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class SubtractContext extends ExprContext {
@@ -1656,14 +1360,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public SubtractContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterSubtract(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitSubtract(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeCastContext extends ExprContext {
@@ -1678,14 +1374,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public TypeCastContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeCast(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeCast(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class IfContext extends ExprContext {
@@ -1702,14 +1390,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public IfContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterIf(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitIf(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ApplicationContext extends ExprContext {
@@ -1729,14 +1409,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public ApplicationContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterApplication(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitApplication(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class DerefContext extends ExprContext {
@@ -1746,14 +1418,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public DerefContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDeref(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDeref(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class IsEmptyContext extends ExprContext {
@@ -1765,27 +1429,11 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public IsEmptyContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterIsEmpty(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitIsEmpty(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PanicContext extends ExprContext {
 		public TerminalNode PANIC() { return getToken(stellaParser.PANIC, 0); }
 		public PanicContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPanic(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPanic(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class LessThanOrEqualContext extends ExprContext {
@@ -1799,14 +1447,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public LessThanOrEqualContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLessThanOrEqual(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLessThanOrEqual(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class SuccContext extends ExprContext {
@@ -1818,14 +1458,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public SuccContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterSucc(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitSucc(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class InlContext extends ExprContext {
@@ -1837,14 +1469,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public InlContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterInl(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitInl(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class GreaterThanOrEqualContext extends ExprContext {
@@ -1858,14 +1482,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public GreaterThanOrEqualContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterGreaterThanOrEqual(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitGreaterThanOrEqual(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class InrContext extends ExprContext {
@@ -1877,14 +1493,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public InrContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterInr(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitInr(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class MatchContext extends ExprContext {
@@ -1907,14 +1515,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_10, i);
 		}
 		public MatchContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterMatch(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitMatch(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class LogicNotContext extends ExprContext {
@@ -1926,14 +1526,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public LogicNotContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLogicNot(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLogicNot(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ParenthesisedExprContext extends ExprContext {
@@ -1944,14 +1536,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public ParenthesisedExprContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterParenthesisedExpr(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitParenthesisedExpr(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TailContext extends ExprContext {
@@ -1963,14 +1547,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public TailContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTail(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTail(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class RecordContext extends ExprContext {
@@ -1989,14 +1565,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public RecordContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterRecord(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitRecord(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class LogicAndContext extends ExprContext {
@@ -2010,14 +1578,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public LogicAndContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLogicAnd(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLogicAnd(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeApplicationContext extends ExprContext {
@@ -2033,14 +1593,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public TypeApplicationContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeApplication(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeApplication(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class LetRecContext extends ExprContext {
@@ -2063,14 +1615,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public LetRecContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLetRec(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLetRec(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class LogicOrContext extends ExprContext {
@@ -2084,14 +1628,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public LogicOrContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLogicOr(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLogicOr(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TryWithContext extends ExprContext {
@@ -2114,14 +1650,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public TryWithContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTryWith(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTryWith(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PredContext extends ExprContext {
@@ -2133,14 +1661,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public PredContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPred(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPred(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeAscContext extends ExprContext {
@@ -2154,14 +1674,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public TypeAscContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeAsc(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeAsc(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class NatRecContext extends ExprContext {
@@ -2182,14 +1694,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public NatRecContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterNatRec(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitNatRec(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class UnfoldContext extends ExprContext {
@@ -2205,14 +1709,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public UnfoldContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterUnfold(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitUnfold(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class RefContext extends ExprContext {
@@ -2222,14 +1718,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public RefContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterRef(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitRef(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class DotTupleContext extends ExprContext {
@@ -2241,14 +1729,6 @@ public class stellaParser extends Parser {
 		}
 		public TerminalNode INTEGER() { return getToken(stellaParser.INTEGER, 0); }
 		public DotTupleContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterDotTuple(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitDotTuple(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class FixContext extends ExprContext {
@@ -2260,14 +1740,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public FixContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterFix(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitFix(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class LetContext extends ExprContext {
@@ -2290,14 +1762,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public LetContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLet(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLet(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class AssignContext extends ExprContext {
@@ -2311,14 +1775,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public AssignContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterAssign(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitAssign(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TupleContext extends ExprContext {
@@ -2337,14 +1793,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public TupleContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTuple(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTuple(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ConsListContext extends ExprContext {
@@ -2361,14 +1809,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public ConsListContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterConsList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitConsList(this);
-		}
 	}
 
 	public final ExprContext expr() throws RecognitionException {
@@ -3462,14 +2902,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_patternBinding; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternBinding(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternBinding(this);
-		}
 	}
 
 	public final PatternBindingContext patternBinding() throws RecognitionException {
@@ -3510,14 +2942,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_binding; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterBinding(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitBinding(this);
-		}
 	}
 
 	public final BindingContext binding() throws RecognitionException {
@@ -3560,14 +2984,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_matchCase; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterMatchCase(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitMatchCase(this);
-		}
 	}
 
 	public final MatchCaseContext matchCase() throws RecognitionException {
@@ -3622,14 +3038,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(PatternContext.class,i);
 		}
 		public PatternConsContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternCons(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternCons(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternTupleContext extends PatternContext {
@@ -3648,14 +3056,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public PatternTupleContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternTuple(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternTuple(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternListContext extends PatternContext {
@@ -3674,14 +3074,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public PatternListContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternList(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternRecordContext extends PatternContext {
@@ -3700,14 +3092,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public PatternRecordContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternRecord(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternRecord(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternVariantContext extends PatternContext {
@@ -3721,28 +3105,12 @@ public class stellaParser extends Parser {
 			return getRuleContext(PatternContext.class,0);
 		}
 		public PatternVariantContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternVariant(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternVariant(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternIntContext extends PatternContext {
 		public Token n;
 		public TerminalNode INTEGER() { return getToken(stellaParser.INTEGER, 0); }
 		public PatternIntContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternInt(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternInt(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternInrContext extends PatternContext {
@@ -3754,27 +3122,11 @@ public class stellaParser extends Parser {
 			return getRuleContext(PatternContext.class,0);
 		}
 		public PatternInrContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternInr(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternInr(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternTrueContext extends PatternContext {
 		public TerminalNode Surrogate_id_SYMB_60() { return getToken(stellaParser.Surrogate_id_SYMB_60, 0); }
 		public PatternTrueContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternTrue(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternTrue(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternInlContext extends PatternContext {
@@ -3786,28 +3138,12 @@ public class stellaParser extends Parser {
 			return getRuleContext(PatternContext.class,0);
 		}
 		public PatternInlContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternInl(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternInl(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternVarContext extends PatternContext {
 		public Token name;
 		public TerminalNode StellaIdent() { return getToken(stellaParser.StellaIdent, 0); }
 		public PatternVarContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternVar(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternVar(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ParenthesisedPatternContext extends PatternContext {
@@ -3818,14 +3154,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(PatternContext.class,0);
 		}
 		public ParenthesisedPatternContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterParenthesisedPattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitParenthesisedPattern(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternSuccContext extends PatternContext {
@@ -3837,40 +3165,16 @@ public class stellaParser extends Parser {
 			return getRuleContext(PatternContext.class,0);
 		}
 		public PatternSuccContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternSucc(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternSucc(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternFalseContext extends PatternContext {
 		public TerminalNode Surrogate_id_SYMB_41() { return getToken(stellaParser.Surrogate_id_SYMB_41, 0); }
 		public PatternFalseContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternFalse(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternFalse(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class PatternUnitContext extends PatternContext {
 		public TerminalNode Surrogate_id_SYMB_63() { return getToken(stellaParser.Surrogate_id_SYMB_63, 0); }
 		public PatternUnitContext(PatternContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterPatternUnit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitPatternUnit(this);
-		}
 	}
 
 	public final PatternContext pattern() throws RecognitionException {
@@ -4157,14 +3461,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_labelledPattern; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterLabelledPattern(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitLabelledPattern(this);
-		}
 	}
 
 	public final LabelledPatternContext labelledPattern() throws RecognitionException {
@@ -4221,40 +3517,16 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public TypeTupleContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeTuple(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeTuple(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeTopContext extends StellatypeContext {
 		public TerminalNode TOP_TYPE() { return getToken(stellaParser.TOP_TYPE, 0); }
 		public TypeTopContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeTop(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeTop(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeBoolContext extends StellatypeContext {
 		public TerminalNode Surrogate_id_SYMB_32() { return getToken(stellaParser.Surrogate_id_SYMB_32, 0); }
 		public TypeBoolContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeBool(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeBool(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeRefContext extends StellatypeContext {
@@ -4264,14 +3536,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public TypeRefContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeRef(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeRef(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeRecContext extends StellatypeContext {
@@ -4284,14 +3548,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public TypeRecContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeRec(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeRec(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeSumContext extends StellatypeContext {
@@ -4305,28 +3561,12 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,i);
 		}
 		public TypeSumContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeSum(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeSum(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeVarContext extends StellatypeContext {
 		public Token name;
 		public TerminalNode StellaIdent() { return getToken(stellaParser.StellaIdent, 0); }
 		public TypeVarContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeVar(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeVar(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeVariantContext extends StellatypeContext {
@@ -4345,53 +3585,21 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public TypeVariantContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeVariant(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeVariant(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeUnitContext extends StellatypeContext {
 		public TerminalNode Surrogate_id_SYMB_34() { return getToken(stellaParser.Surrogate_id_SYMB_34, 0); }
 		public TypeUnitContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeUnit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeUnit(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeNatContext extends StellatypeContext {
 		public TerminalNode Surrogate_id_SYMB_33() { return getToken(stellaParser.Surrogate_id_SYMB_33, 0); }
 		public TypeNatContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeNat(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeNat(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeBottomContext extends StellatypeContext {
 		public TerminalNode BOTTOM_TYPE() { return getToken(stellaParser.BOTTOM_TYPE, 0); }
 		public TypeBottomContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeBottom(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeBottom(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeParensContext extends StellatypeContext {
@@ -4402,14 +3610,6 @@ public class stellaParser extends Parser {
 			return getRuleContext(StellatypeContext.class,0);
 		}
 		public TypeParensContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeParens(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeParens(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeFunContext extends StellatypeContext {
@@ -4431,14 +3631,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public TypeFunContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeFun(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeFun(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeForAllContext extends StellatypeContext {
@@ -4455,14 +3647,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.StellaIdent, i);
 		}
 		public TypeForAllContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeForAll(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeForAll(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeRecordContext extends StellatypeContext {
@@ -4481,14 +3665,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public TypeRecordContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeRecord(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeRecord(this);
-		}
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TypeListContext extends StellatypeContext {
@@ -4507,14 +3683,6 @@ public class stellaParser extends Parser {
 			return getToken(stellaParser.Surrogate_id_SYMB_0, i);
 		}
 		public TypeListContext(StellatypeContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterTypeList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitTypeList(this);
-		}
 	}
 
 	public final StellatypeContext stellatype() throws RecognitionException {
@@ -4904,14 +4072,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_recordFieldType; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterRecordFieldType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitRecordFieldType(this);
-		}
 	}
 
 	public final RecordFieldTypeContext recordFieldType() throws RecognitionException {
@@ -4952,14 +4112,6 @@ public class stellaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variantFieldType; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).enterVariantFieldType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof stellaParserListener ) ((stellaParserListener)listener).exitVariantFieldType(this);
-		}
 	}
 
 	public final VariantFieldTypeContext variantFieldType() throws RecognitionException {
